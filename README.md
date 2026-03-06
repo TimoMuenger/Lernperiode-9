@@ -17,4 +17,10 @@ Heute habe ich mir zuerst eine Technologie ausgesucht und mich für das Framewor
 Heute habe ich gelernt wie man GET, PATCH, etc. brauch, Anfragen an den Server schickt und habe selber Users kreiert.
 
 ## 06.03
-- [ ] Tutorial weiter schauen
+- [x] Tutorial weiter schauen
+
+Heute habe ich gelert wie ich Input validieren kann und wie dependency injection und DTO (Data Transfer Object) funktioniert mit NestJS.
+
+## 13.03
+- [ ] Tutorial beenden
+- [ ] Eigenes Projekt starten (Backend für die Task App aus der letzten LP)
