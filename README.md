@@ -22,5 +22,12 @@ Heute habe ich gelernt wie man GET, PATCH, etc. brauch, Anfragen an den Server s
 Heute habe ich gelert wie ich Input validieren kann und wie dependency injection und DTO (Data Transfer Object) funktioniert mit NestJS.
 
 ## 13.03
-- [ ] Tutorial beenden
-- [ ] Eigenes Projekt starten (Backend für die Task App aus der letzten LP)
+- [x] Tutorial beenden
+- [x] Eigenes Projekt starten (Backend für die Task App aus der letzten LP)
+
+Heute habe ich das Tutorial beendet und habe mit einer neuen Taskapp angefangen. Nach dem Coden der Taskapp habe ich bereits eine neues NestJS Projekt istalliert.
+
+## 20.03
+- [ ] Struktur der Tasks definieren
+- [ ] Logik schreiben
+- [ ] Endpunkt für Anfragen erstellen
