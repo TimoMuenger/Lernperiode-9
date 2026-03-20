@@ -28,6 +28,12 @@ Heute habe ich gelert wie ich Input validieren kann und wie dependency injection
 Heute habe ich das Tutorial beendet und habe mit einer neuen Taskapp angefangen. Nach dem Coden der Taskapp habe ich bereits eine neues NestJS Projekt istalliert.
 
 ## 20.03
-- [ ] Struktur der Tasks definieren
-- [ ] Logik schreiben
-- [ ] Endpunkt für Anfragen erstellen
+- [x] Struktur der Tasks definieren
+- [x] Logik schreiben
+- [x] Endpunkt für Anfragen erstellen
+
+Heute habe ich mein Projekt so weit fertig gestellt, dass ich die ToDos speichern kann.
+
+## 27.03
+- [ ] Methode hinzufügen mit der man Tasks bearbeiten kann
+- [ ] Tutorial erstellen
