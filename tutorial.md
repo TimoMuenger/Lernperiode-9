@@ -142,7 +142,6 @@ npm run start:dev
 # Result
 
 As a result you should now be able to store something in the backend for me it is the tasks in the task app.
-![image task app](image-1.png)
 
 # What could go wrong?
 
