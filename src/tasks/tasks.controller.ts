@@ -9,6 +9,7 @@ import {
   Patch,
   Param,
   Delete,
+  Put,
 } from '@nestjs/common';
 import { TasksService } from './tasks.service';
 
@@ -30,5 +31,9 @@ export class TasksController {
   remove(@Param('id') id: string) {
     //id wird in Zahl umgewandelt
     return this.tasksService.remove(+id);
+  }
+  @Put(':id')
+  update(@Param('id') id: string, @Body('text') text: string) {
+    return this.tasksService.update(+id, text);
   }
 }

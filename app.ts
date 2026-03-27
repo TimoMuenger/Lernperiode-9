@@ -45,23 +45,53 @@ async function deleteTask(id: number): Promise<void> {
     renderTasks();
 }
 
+async function editTask(id: number, oldText: string): Promise<void> {
+    const newText = prompt('Todo bearbeiten:', oldText);
+
+    if (newText !== null && newText.trim() !== '') {
+        await fetch(`${API_URL}/${id}`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ text: newText.trim() })
+        });
+        
+        const task = Tasks.find(t => t.id === id);
+        if (task) {
+            task.text = newText.trim();
+        }
+        
+        renderTasks();
+    }
+}
+
 function renderTasks(): void {
     taskList.innerHTML = ''; 
 
     Tasks.forEach(task => {
         const li = document.createElement('li');
-        li.textContent = task.text;
+        
+        const textSpan = document.createElement('span');
+        textSpan.textContent = task.text;
+        li.appendChild(textSpan);
+
+        const btnContainer = document.createElement('div');
+
+        const editBtn = document.createElement('button');
+        editBtn.textContent = 'Bearbeiten';
+        editBtn.onclick = () => editTask(task.id, task.text);
 
         const deleteBtn = document.createElement('button');
         deleteBtn.textContent = 'Löschen';
         deleteBtn.className = 'delete-btn';
         deleteBtn.onclick = () => deleteTask(task.id);
 
-        li.appendChild(deleteBtn);
+        btnContainer.appendChild(editBtn);
+        btnContainer.appendChild(deleteBtn);
+        li.appendChild(btnContainer);
+
         taskList.appendChild(li);
     });
 }
-
 addButton.addEventListener('click', addTask);
 taskInput.addEventListener('keypress', (event: KeyboardEvent) => {
     if (event.key === 'Enter') {
