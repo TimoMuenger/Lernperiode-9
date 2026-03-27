@@ -4,7 +4,7 @@ title: NestJS Tutorial
 
 # Goal
 
-a backend for a TS frontend
+A backend for a TS frontend
 
 # Previous Knowledge
 
